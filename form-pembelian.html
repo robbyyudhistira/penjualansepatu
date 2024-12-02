@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CHECKOUT</title>
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body></body>
+
+<section class="header">
+
+   <a href="home.html" class="logo">newRey.inc</a>
+
+   <nav class="navbar">
+      <a href="home.html">home</a>
+      <a href="about.html">about</a>
+      <a href="product.html">product</a>
+      <a href="sizechart.html">size chart</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<div class="heading" style="background:url(images/product.png) no-repeat">
+   <h1>checkout now</h1>
+</div>
+
+<form action="" method="post"> 
+    <table class="tabel" border="0" align="center" width="75%" cellpadding="8" cellspacing="5">
+        <th class="capt" height="70px" colspan="2">Formulir Pembelian Barang</th>
+        <tr>
+            <td colspan="2" align="center">Identitas Pembeli</td>
+        </tr>
+        <tr>
+            <td width="30%">Nama</td>
+            <td>: 
+                <select class="atur">
+                    <option value="" disabled selected hidden>Gender...</option>
+                    <option value="Tuan">Tuan</option>
+                    <option value="Nyonya">Nyonya</option>
+                    <input style="margin-left: 10px;" class="atur" type="text" placeholder="Masukkan nama anda disini"></td>
+                </select>
+        </tr>
+        <tr>
+            <td>No. Telephon</td>
+            <td>: <input class="atur" type="text" placeholder="Masukkan No. telephone yang bisa dihubungi"></td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top; padding-top: 10px;">Alamat Pembeli</td>
+            <td>: 
+                <textarea class="atur" placeholder="Detail Alamat lengkap seperti desa, RT, RW, Jalan" style="width: 90%; vertical-align: top; margin-bottom: 4px;" rows="4"></textarea>
+                <input style="margin-left: 10px;" class="atur" type="text" placeholder="Kabupaten ">
+                <input style="margin-left: 10px;" class="atur" type="text" placeholder="Kecamatan ">
+                <input style="margin-left: 10px;" class="atur" type="text" placeholder="Kode Pos ">
+                <input style="margin-left: 10px;" class="atur" type="text" placeholder="Provinsi ">
+            </td>
+        </tr>
+        <tr>
+            <td>E-Mail</td>
+            <td>: <input class="atur" type="text" placeholder="E-Mail anda..."></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">Pilihan Sepatu</td>
+        </tr>
+        <tr>
+            <td width="30%">Brand Sepatu</td>
+            <td>: 
+                <select class="atur">
+                    <option value="" disabled selected hidden>Brand...</option>
+                    <option value="ventela">VENTELA</option>
+                    <option value="compass">COMPASS</option>
+                    <option value="geoffmax">GEOFFMAX</option>
+                    <option value="aero">AEROSTREET</option>
+                    <option value="warrior">WARRIOR</option>
+                </select>
+        </tr>
+        <tr>
+            <td width="30%">Seri Sepatu</td>
+            <td>: 
+                <select class="atur">
+                    <option value="" disabled selected hidden>Seri...</option>
+                    <optgroup label="Ventela">
+                        <option value="plbn">Public Low Black Natural</option>
+                        <option value="phbn">Public High Black Natural</option>
+                        <option value="plwn">Public Low White Natural</option>
+                        <option value="phwn">Public High White Natural</option>
+                    </optgroup>
+                    <optgroup label="Geoff Max">
+                        <option value="tml">Timeless Low</option>
+                        <option value="tmh">Timeless High</option>
+                        <option value="mml">Maverick Low</option>
+                        <option value="mmh">Maverick High</option>
+                    </optgroup>
+                    <optgroup label="Compass">
+                        <option value="gzl">Gazelle Low</option>
+                        <option value="gzh">Gazelle High</option>
+                        <option value="rdpl">RD Proto 1 Low</option>
+                        <option value="rdph">RD Proto 1 High</option>
+                    </optgroup>
+                    <optgroup label="Aero Street">
+                        <option value="ml">Massive Low</option>
+                        <option value="jh">Jhosse High</option>
+                        <option value="db">Delta Black</option>
+                        <option value="hl">Hoops Low</option>
+                    </optgroup>
+                    <optgroup label="Warrior">
+                        <option value="cl">Classic Low</option>
+                        <option value="ch">Classic High</option>
+                        <option value="hrl">Hermes Low</option>
+                        <option value="hrh">Hermes High</option>
+                    </optgroup>
+                </select>
+        </tr>
+        <tr>
+            <td>Varian Warna Sepatu</td>
+            <td >: 
+                <input type="radio" name="lembaga" value="hitam-putih">Hitam-Putih
+                <input type="radio" name="lembaga" value="hitam-hitam">Hitam-Hitam
+                <input type="radio" name="lembaga" value="navy-putih">Putih-Navy
+            </td>
+        </tr>
+        <tr>
+            <td width="30%">Ukuran Sepatu</td>
+            <td>: 
+                <input class="atur" type="number" id="quantity" name="quantity" min="36" max="44" placeholder="UK">
+        </tr>
+        <tr>
+            <td width="30%">Quantity</td>
+            <td>: 
+                <input class="atur" type="number" id="quantity" name="quantity" min="1" max="100" placeholder="Qty...">
+        </tr>
+        <tr>
+            <td>Tanggal Pembelian</td>
+            <td>: <input class="atur" type="date"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">Metode Pembayaran</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <fieldset>
+                    <legend>BANK</legend>
+                    <input type="radio" name="wallet"><img src="images/brii.png" style="width: 100px; height: 80px; vertical-align: middle; padding-right: 5px;">
+                    <input type="radio" name="wallet"><img src="images/bni.png" style="width: 120px; height: 120px; vertical-align: middle; padding-right: 5px;">
+                    <input type="radio" name="wallet"><img src="images/mandiri.png" style="width: 70px; height: 50px; vertical-align: middle; padding-right: 5px;">
+                    <input type="radio" name="wallet"><img src="images/bca.png" style="width: 100px; height: 100px; vertical-align: middle; padding-right: 5px;">
+                    <input type="radio" name="wallet"><img src="images/btn.jpg" style="width: 70px; height: 50px; vertical-align: middle; padding-right: 5px; border-radius: 10%;">
+                </fieldset>
+                <fieldset>
+                    <legend>E-Wallet</legend>
+                    <input type="radio" name="wallet"><img src="images/danaa.png" style="width: 80px; height: 80px; vertical-align: middle; padding-right: 5px; border-radius: 10%;">
+                    <input type="radio" name="wallet"><img src="images/ovo.png" style="width: 80px; height: 80px; vertical-align: middle; padding-right: 5px; border-radius: 10%;">
+                    <input type="radio" name="wallet"><img src="images/gopay.png" style="width: 80px; height: 80px; vertical-align: middle; padding-right: 5px; border-radius: 10%;">
+                    <input type="radio" name="wallet"><img src="images/spay.png" style="width: 80px; height: 80px; vertical-align: middle; padding-right: 5px; border-radius: 10%;">
+                    <input type="radio" name="wallet"><img src="images/linkaja.png" style="width: 100px; height: 70px; vertical-align: middle; padding-right: 5px; border-radius: 10%;">
+                </fieldset>
+                <fieldset>
+                    <legend>Indomaret/Alfamart</legend>
+                    <input type="radio" name="wallet"><img src="images/idm.png" style="width: 90px; height: 50px; vertical-align: middle; padding-right: 5px; border-radius: 10%;">
+                    <input type="radio" name="wallet"><img src="images/alfa.png" style="width: 90px; height: 50px; vertical-align: middle; padding-right: 5px; border-radius: 10%;">
+                </fieldset>
+                <fieldset>
+                    <legend>COD</legend>
+                    <input type="radio" name="wallet"><img src="images/cod.png" style="width: 90px; height: 60px; vertical-align: middle; padding-right: 5px; border-radius: 10%;">
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">Pengiriman Barang</td>
+        </tr>
+        <tr>
+            <td width="30%">Ekspedisi</td>
+            <td>: 
+                <select class="atur">
+                    <option value="" disabled selected hidden>Pilih ekspedisi...</option>
+                    <option value="jnt">JNT</option>
+                    <option value="jne">JNE</option>
+                    <option value="secepat">SICEPAT</option>
+                    <option value="tiki">TIKI</option>
+                    <option value="anteraja">ANTERAJA</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Opsi Pengiriman</td>
+            <td >: 
+                <input type="radio" name="lembaga" value="reguler">Reguler
+                <input type="radio" name="lembaga" value="hemat">Hemat
+                <input type="radio" name="lembaga" value="sameday">Same Day
+            </td>
+        </tr>
+        <tr>
+            <td>Proteksi Perlindungan Produk</td>
+            <td >: 
+                <input type="radio" name="lembaga" value="ya">Ya
+                <input type="radio" name="lembaga" value="tidak">Tidak
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" class="button" name="Kirim" value="Kirim">
+                <input type="reset" class="button" name="Kirim" value="Batal">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<section class="footer">
+
+    <div class="social-buttons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <div class="credit">created by <span>Kelompok 3</span> | all rights reserved</div>
+
+</section>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
